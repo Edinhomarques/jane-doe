@@ -1,98 +1,97 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jane Doe</title>
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jane Doe - Contact</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header class="header" >
-        <h1>Jane Doe</h1>
-        <nav class="navbar">
-          <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="music.html">Music</a></li>
-              <li><a href="contact.html">Contact</a></li>
-          </ul>
-
-        </nav>
-    </header>
-    <section id="contact">
-        <h2>Contact</h2>
-        <section id="form-mapa" class="duas-colunas">
+  <header>
+    <h1>Jane Doe</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="contact">
+    <h2>Contact</h2>
+    <section class="duas-colunas">
+      <div>
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="marketing">How did you found Jane's Music?</label>
             <div>
-                <form action="">
-                    <div class="form-group">
-                        <label for="name">Nome</label><br>
-                        <input type="text" id="name">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email</label> <br>
-                        <input type="email" id="email">
-                     </div>
-
-                     <div class="form-group">
-                        <label for="mensagem">Mensagem</label> <br>
-                        <textarea  id="mensagem"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for=""> How did you found Jane's songs</label>
-                        <div>
-                            <input type="radio" name="marketing" id="instagram">
-                            <label for="instragram">Instagram</label><br>
-                           
-                            <input type="radio" name="marketing" id="facebook">
-                            <label for="instragram">Facebook</label> <br>
-                           
-                            <input type="radio" name="marketing" id="youtube">
-                            <label for="youtube">Youtube</label> <br><br>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <input type="checkbox" name="newletter" id="newletter">
-                        <label for="newletter"> How did you found Jane's songs</label><br>
-                    </div>
-                    <div class="form-group">
-                            <input type="submit" name="enviar" id="enviar">
-                        </div>
-                </form>
+              <input type="radio" name="marketing" id="instagram" value="Instagram">
+              <label for="instagram">Instagram</label>
             </div>
             <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7245787.637879276!2d-88.3009467084705!3d27.532010719162383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c1766591562abf%3A0xf72e13d35bc74ed0!2zRmzDs3JpZGEsIEVVQQ!5e0!3m2!1spt-BR!2sbr!4v1583432905266!5m2!1spt-BR!2sbr" style="border: 0"></iframe>
+              <input type="radio" name="marketing" id="facebook" value="facebook">
+              <label for="facebook">Facebook</label>
             </div>
-        </section>
-
-        <section>
-            <article>
-                <h2>MANAGEMENT | Karen Blanche</h2>
-                <span>email: info@mysite.com</span>
-                <span>phone:123-456-7890</span>
-                <hr>
-
-                <h2>Booking | Daniel Ku</h2>
-                <span>email: info@mysite.com</span>
-                <span>phone:123-456-7890</span>
-                <hr>
-
-                <h2>Label | Wix Records, Jake Coldham</h2>
-                <span>email: info@mysite.com</span>
-                <span>phone:123-456-7890</span>
-                <hr>
-
-                <h2>PR | That girl Pr, Sarah Brookstone</h2>
-                <span>email: info@mysite.com</span>
-                <span>phone:123-456-7890</span>
-            </article>
-        </section>
+            <div>
+              <input type="radio" name="marketing" id="youtube" value="youtube">
+              <label for="youtube">Youtube</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" name="newsletter" id="newsletter">
+            <label for="newsletter">Do you want to subscribe to our newsletter?</label>
+          </div>
+          <div class="form-group">
+            <button type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+      <div class="mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48696.05594725369!2d-120.56486157411139!3d40.28677819558661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809db7e2ccf00ec9%3A0x9143c5921b9c5a04!2sJanesville%2C%20CA%2096114%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1583349703851!5m2!1spt-BR!2sbr"
+          frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
     </section>
-    <footer>
-       <p> &copy; Copyright - Jane Doe</p>
-    </footer>
-    
+    <section>
+      <h3>MANAGEMENT | Karen Blanche</h3>
+      <p>email: <a href="mailto:info@mysite.com">info@mysite.com</a></p>
+      <p>phone: <a href="https://wa.me/1234567890">123-456-7890</a></p>
+      <hr>
+      <h3>BOOKING | Daniel Ku</h3>
+      <p>email: <a href="mailto:info@mysite.com">info@mysite.com</a></p>
+      <p>phone: <a href="tel:123-456-7890">123-456-7890</a></p>
+      <hr>
+      <h3>BOOKING | Daniel Ku</h3>
+      <p>email: <a href="mailto:info@mysite.com">info@mysite.com</a></p>
+      <p>phone: <a href="tel:123-456-7890">123-456-7890</a></p>
+      <hr>
+      <h3>BOOKING | Daniel Ku</h3>
+      <p>email: <a href="mailto:info@mysite.com">info@mysite.com</a></p>
+      <p>phone: <a href="tel:123-456-7890">123-456-7890</a></p>
+    </section>
+  </main>
+  <footer>
+    <p>Copyright - Jane Doe</p>
+  </footer>
+
+
+
+
 </body>
+
 </html>
